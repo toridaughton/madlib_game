@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block body %}
+    <form action="/madlib">
+        <h1>Welcome to Madlib!</h1>
+        Please input the fields below:
+        <br>
+        Type a color:
+        <input type="text" name="color" placeholder="color"/>
+        <br>
+        Type a noun:
+        <input type="text" name="noun" placeholder="noun"/>
+        <br>
+        Type a person:
+        <input type="text" name="person" placeholder="person"/>
+        <br>
+        Type an adjective:
+        <input type="text" name="adjective" placeholder="adjective"/>
+        <br>
+        <input type="submit"/>
+    </form>
+{% endblock %}

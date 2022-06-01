@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block body %}
+    <h2>Hi {{ person }}! I think you're {{ compliment }}!</h2>
+    <br>
+    <form action="/game">
+      <h4>Would you like to play a game?</h4>
+    <input name="option" type="radio" id="radio-yes" value="yes"/>
+    <label for="radio-yes">Yes!</label>
+    <br>
+    <input name="option" type="radio" id="radio-no" value="no"/>
+    <label for="radio-no">No thanks..</label>
+    <br>
+    <br>
+    <input type="submit"/>
+    </form>
+{% endblock %}
